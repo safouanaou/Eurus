@@ -18,6 +18,11 @@ export default {
     new HtmlWebpackPlugin({
       template: "./src/template.html",
     }),
+    new HtmlWebpackPlugin({
+      template: "./src/city.html",
+      filename: "city.html",
+      
+    })
   ],
   module: {
     rules: [

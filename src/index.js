@@ -11,7 +11,7 @@ const getWeather = async (location)=>{
             throw new Error("HTTP error! Status", response.status);
         }
         const data = await response.json();
-        console.log(data.days[0].temp)
+        console.log(data)
 
     } catch (error){
         console.error('fetching weather data failed:', error);
